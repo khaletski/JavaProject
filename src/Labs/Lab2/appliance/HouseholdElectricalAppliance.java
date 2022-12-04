@@ -2,8 +2,8 @@ package Labs.Lab2.appliance;
 
 public abstract class HouseholdElectricalAppliance implements Comparable<HouseholdElectricalAppliance> {
 
-    private int power;
-    private boolean powerSupply;
+    protected int power;
+    protected boolean powerSupply;
 
     public HouseholdElectricalAppliance(int power, boolean powerSupply) {
         this.power = power;
@@ -36,4 +36,6 @@ public abstract class HouseholdElectricalAppliance implements Comparable<Househo
 
         return result;
     }
+
+
 }

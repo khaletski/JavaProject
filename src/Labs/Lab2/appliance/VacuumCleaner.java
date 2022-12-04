@@ -11,4 +11,30 @@ public class VacuumCleaner extends HouseholdElectricalAppliance{
         this.cordLength = cordLength;
         this.vacuumCleanerType = vacuumCleanerType;
     }
+
+    public double getCordLength() {
+        return cordLength;
+    }
+
+    public void setCordLength(double cordLength) {
+        this.cordLength = cordLength;
+    }
+
+    public VacuumCleanerTypes getVacuumCleanerType() {
+        return vacuumCleanerType;
+    }
+
+    public void setVacuumCleanerType(VacuumCleanerTypes vacuumCleanerType) {
+        this.vacuumCleanerType = vacuumCleanerType;
+    }
+
+    @Override
+    public String toString() {
+        return "VacuumCleaner{" +
+                "cordLength=" + cordLength +
+                ", vacuumCleanerType=" + vacuumCleanerType +
+                ", power=" + power +
+                ", powerSupply=" + powerSupply +
+                '}';
+    }
 }

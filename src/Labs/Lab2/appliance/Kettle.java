@@ -10,4 +10,30 @@ public class Kettle extends HouseholdElectricalAppliance{
         this.volume = volume;
         this.remoteControl = remoteControl;
     }
+
+    public double getVolume() {
+        return volume;
+    }
+
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
+
+    public boolean isRemoteControl() {
+        return remoteControl;
+    }
+
+    public void setRemoteControl(boolean remoteControl) {
+        this.remoteControl = remoteControl;
+    }
+
+    @Override
+    public String toString() {
+        return "Kettle{" +
+                "volume=" + volume +
+                ", remoteControl=" + remoteControl +
+                ", power=" + power +
+                ", powerSupply=" + powerSupply +
+                '}';
+    }
 }
