@@ -1,4 +1,4 @@
-package Labs.Lab2;
+package Labs.Lab2.appliance;
 
 public abstract class HouseholdElectricalAppliance implements Comparable<HouseholdElectricalAppliance> {
 
