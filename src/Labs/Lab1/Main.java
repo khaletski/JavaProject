@@ -1,6 +1,8 @@
-import point.Point;
-import triangle.Triangle;
-import triangle.TriangleCalculator;
+package Labs.Lab1;
+import Labs.Lab1.point.Point;
+import Labs.Lab1.triangle.*;
+
+
 
 public class Main {
 

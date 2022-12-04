@@ -1,4 +1,4 @@
-package triangle;
+package Labs.Lab1.triangle;
 
 import java.util.*;
 

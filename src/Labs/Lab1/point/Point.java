@@ -1,4 +1,4 @@
-package point;
+package Labs.Lab1.point;
 
 public class Point {
 
