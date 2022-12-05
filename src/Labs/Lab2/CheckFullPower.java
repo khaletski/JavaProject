@@ -5,11 +5,11 @@ import Labs.Lab2.appliance.HouseholdElectricalAppliance;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CheckPower {
+public class CheckFullPower {
 
     private List<HouseholdElectricalAppliance> householdElectricalApplianceList = new ArrayList<>();
 
-    public CheckPower(List<HouseholdElectricalAppliance> householdElectricalApplianceList) {
+    public CheckFullPower(List<HouseholdElectricalAppliance> householdElectricalApplianceList) {
         this.householdElectricalApplianceList = householdElectricalApplianceList;
     }
 

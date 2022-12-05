@@ -18,10 +18,10 @@ public class Main {
         householdElectricalApplianceList.add(new CleaningAppliance(2000, true, "VacuumCleaner", 3.4));
         householdElectricalApplianceList.add(new LightningAppliance(1300, false, "DeskLamp", 700));
         householdElectricalApplianceList.add(new HeatingAppliance(5600, true, "Heater", 80, false));
-        householdElectricalApplianceList.add(new KithcenAppliance(1850, true, "Kettle",false, true));
+        householdElectricalApplianceList.add(new KithcenAppliance(1850, true, "Kettle", false, true));
 
 
-        CheckPower checkPower = new CheckPower(householdElectricalApplianceList);
+        CheckFullPower checkPower = new CheckFullPower(householdElectricalApplianceList);
         System.out.println(checkPower.CalculatePower());
 
         Collections.sort(householdElectricalApplianceList);
