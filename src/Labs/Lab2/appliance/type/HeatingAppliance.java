@@ -1,4 +1,6 @@
-package Labs.Lab2.appliance;
+package Labs.Lab2.appliance.type;
+
+import Labs.Lab2.appliance.HouseholdElectricalAppliance;
 
 public class HeatingAppliance extends HouseholdElectricalAppliance {
 

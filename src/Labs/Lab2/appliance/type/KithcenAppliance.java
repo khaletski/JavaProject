@@ -1,6 +1,8 @@
-package Labs.Lab2.appliance;
+package Labs.Lab2.appliance.type;
 
-public class KithcenAppliance extends HouseholdElectricalAppliance{
+import Labs.Lab2.appliance.HouseholdElectricalAppliance;
+
+public class KithcenAppliance extends HouseholdElectricalAppliance {
 
     private boolean timer;
     private boolean remoteControl;

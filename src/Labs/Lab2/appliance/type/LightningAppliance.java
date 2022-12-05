@@ -1,6 +1,8 @@
-package Labs.Lab2.appliance;
+package Labs.Lab2.appliance.type;
 
-public class LightningAppliance extends HouseholdElectricalAppliance{
+import Labs.Lab2.appliance.HouseholdElectricalAppliance;
+
+public class LightningAppliance extends HouseholdElectricalAppliance {
 
     private double numberOfLumens;
 
