@@ -1,6 +1,6 @@
-package Labs.Lab1;
-import Labs.Lab1.point.Point;
-import Labs.Lab1.triangle.*;
+package labs.lab1;
+import labs.lab1.point.Point;
+import labs.lab1.triangle.*;
 
 
 

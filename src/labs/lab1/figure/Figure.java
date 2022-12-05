@@ -1,4 +1,4 @@
-package Labs.Lab1.figure;
+package labs.lab1.figure;
 
 public interface Figure {
 

@@ -1,10 +1,10 @@
-package Labs.Lab2;
+package labs.lab2;
 
-import Labs.Lab2.appliance.*;
-import Labs.Lab2.appliance.type.CleaningAppliance;
-import Labs.Lab2.appliance.type.HeatingAppliance;
-import Labs.Lab2.appliance.type.KithcenAppliance;
-import Labs.Lab2.appliance.type.LightningAppliance;
+import labs.lab2.appliance.*;
+import labs.lab2.appliance.type.CleaningAppliance;
+import labs.lab2.appliance.type.HeatingAppliance;
+import labs.lab2.appliance.type.KithcenAppliance;
+import labs.lab2.appliance.type.LightningAppliance;
 
 import java.util.ArrayList;
 import java.util.Collections;

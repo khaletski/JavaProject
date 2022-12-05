@@ -1,6 +1,6 @@
-package Labs.Lab2.appliance.type;
+package labs.lab2.appliance.type;
 
-import Labs.Lab2.appliance.HouseholdElectricalAppliance;
+import labs.lab2.appliance.HouseholdElectricalAppliance;
 
 public class CleaningAppliance extends HouseholdElectricalAppliance {
 

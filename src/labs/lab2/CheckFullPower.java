@@ -1,6 +1,6 @@
-package Labs.Lab2;
+package labs.lab2;
 
-import Labs.Lab2.appliance.HouseholdElectricalAppliance;
+import labs.lab2.appliance.HouseholdElectricalAppliance;
 
 import java.util.ArrayList;
 import java.util.List;
