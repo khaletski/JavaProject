@@ -27,5 +27,8 @@ public class Main {
         Collections.sort(householdElectricalApplianceList);
         System.out.println(householdElectricalApplianceList);
 
+        SearchAppliance searchAppliance = new SearchAppliance();
+        System.out.println(searchAppliance.Search(1700, 2300, (ArrayList<HouseholdElectricalAppliance>) householdElectricalApplianceList));
+        System.out.println(searchAppliance.Search(1700,2300, "VacuumCleaner", (ArrayList<HouseholdElectricalAppliance>) householdElectricalApplianceList));
     }
 }
