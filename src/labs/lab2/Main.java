@@ -5,6 +5,8 @@ import labs.lab2.appliance.type.CleaningAppliance;
 import labs.lab2.appliance.type.HeatingAppliance;
 import labs.lab2.appliance.type.KithcenAppliance;
 import labs.lab2.appliance.type.LightningAppliance;
+import labs.lab2.service.CheckFullPower;
+import labs.lab2.service.SearchAppliance;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -28,7 +30,7 @@ public class Main {
         System.out.println(householdElectricalApplianceList);
 
         SearchAppliance searchAppliance = new SearchAppliance();
-        System.out.println(searchAppliance.Search(1700, 2300, (ArrayList<HouseholdElectricalAppliance>) householdElectricalApplianceList));
-        System.out.println(searchAppliance.Search(1700,2300, "VacuumCleaner", (ArrayList<HouseholdElectricalAppliance>) householdElectricalApplianceList));
+        System.out.println(searchAppliance.Search(1700, 2300, householdElectricalApplianceList));
+        System.out.println(searchAppliance.Search(1700, 2300, "VacuumCleaner", householdElectricalApplianceList));
     }
 }

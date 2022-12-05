@@ -1,4 +1,4 @@
-package labs.lab2;
+package labs.lab2.service;
 
 import labs.lab2.appliance.HouseholdElectricalAppliance;
 
@@ -13,7 +13,7 @@ public class CheckFullPower {
         this.householdElectricalApplianceList = householdElectricalApplianceList;
     }
 
-    double CalculatePower() {
+    public double CalculatePower() {
 
         double fullPower = 0;
         for (HouseholdElectricalAppliance o : householdElectricalApplianceList) {
