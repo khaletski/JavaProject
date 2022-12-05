@@ -1,22 +1,22 @@
 package Labs.Lab2.appliance;
 
-public class Kettle extends HouseholdElectricalAppliance{
+public class KithcenAppliance extends HouseholdElectricalAppliance{
 
-    private double volume;
+    private boolean timer;
     private boolean remoteControl;
 
-    public Kettle(int power, boolean powerSupply, double volume, boolean remoteControl) {
-        super(power, powerSupply);
-        this.volume = volume;
+    public KithcenAppliance(int power, boolean powerSupply, String name, boolean timer, boolean remoteControl) {
+        super(name, power, powerSupply);
+        this.timer = timer;
         this.remoteControl = remoteControl;
     }
 
-    public double getVolume() {
-        return volume;
+    public boolean isTimer() {
+        return timer;
     }
 
-    public void setVolume(double volume) {
-        this.volume = volume;
+    public void setTimer(boolean timer) {
+        this.timer = timer;
     }
 
     public boolean isRemoteControl() {
@@ -29,11 +29,12 @@ public class Kettle extends HouseholdElectricalAppliance{
 
     @Override
     public String toString() {
-        return "Kettle{" +
-                "volume=" + volume +
+        return "KithcenAppliance{" +
+                "timer=" + timer +
                 ", remoteControl=" + remoteControl +
                 ", power=" + power +
                 ", powerSupply=" + powerSupply +
+                ", name='" + name + '\'' +
                 '}';
     }
 }

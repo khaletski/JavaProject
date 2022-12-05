@@ -4,8 +4,10 @@ public abstract class HouseholdElectricalAppliance implements Comparable<Househo
 
     protected int power;
     protected boolean powerSupply;
+    protected String name;
 
-    public HouseholdElectricalAppliance(int power, boolean powerSupply) {
+    public HouseholdElectricalAppliance(String name, int power, boolean powerSupply) {
+        this.name = name;
         this.power = power;
         this.powerSupply = powerSupply;
     }
@@ -24,6 +26,14 @@ public abstract class HouseholdElectricalAppliance implements Comparable<Househo
 
     public void setPowerSupply(boolean powerSupply) {
         this.powerSupply = powerSupply;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override

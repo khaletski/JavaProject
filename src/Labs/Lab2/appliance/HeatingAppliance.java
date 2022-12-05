@@ -1,11 +1,11 @@
 package Labs.Lab2.appliance;
 
-public class Iron extends HouseholdElectricalAppliance {
+public class HeatingAppliance extends HouseholdElectricalAppliance {
 
     private double maxTemperature;
     private boolean steamGenerator;
-    public Iron(int power, boolean powerSupply, double maxTemperatur, boolean steamGenerator) {
-        super(power, powerSupply);
+    public HeatingAppliance(int power, boolean powerSupply, String name, double maxTemperature, boolean steamGenerator){
+        super(name, power, powerSupply);
         this.maxTemperature = maxTemperature;
         this.steamGenerator = steamGenerator;
     }
@@ -28,11 +28,12 @@ public class Iron extends HouseholdElectricalAppliance {
 
     @Override
     public String toString() {
-        return "Iron{" +
+        return "HeatingAppliance{" +
                 "maxTemperature=" + maxTemperature +
                 ", steamGenerator=" + steamGenerator +
                 ", power=" + power +
                 ", powerSupply=" + powerSupply +
+                ", name='" + name + '\'' +
                 '}';
     }
 }
