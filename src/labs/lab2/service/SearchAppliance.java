@@ -13,8 +13,9 @@ public class SearchAppliance {
         ArrayList<HouseholdElectricalAppliance> result = new ArrayList<>();
         for(HouseholdElectricalAppliance o : householdElectricalApplianceArrayList)
         {
-            if(o.getPower() >= minPower && o.getPower() <= maxPower)
+            if(o.getPower() >= minPower && o.getPower() <= maxPower) {
                 result.add(o);
+            }
         }
         return result;
     }
@@ -24,8 +25,9 @@ public class SearchAppliance {
         ArrayList<HouseholdElectricalAppliance> result = new ArrayList<>();
         for(HouseholdElectricalAppliance o : householdElectricalApplianceArrayList)
         {
-            if(o.isPowerSupply() == powerSupply)
+            if(o.isPowerSupply() == powerSupply){
                 result.add(o);
+            }
         }
         return result;
     }
@@ -35,8 +37,9 @@ public class SearchAppliance {
         ArrayList<HouseholdElectricalAppliance> result = new ArrayList<>();
         for(HouseholdElectricalAppliance o : householdElectricalApplianceArrayList)
         {
-            if(o.getName().equals(name))
+            if(o.getName().equals(name)){
                 result.add(o);
+            }
         }
         return result;
     }
