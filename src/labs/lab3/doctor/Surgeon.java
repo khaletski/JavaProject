@@ -1,6 +1,8 @@
-package labs.lab3;
+package labs.lab3.doctor;
 
-public class Surgeon implements IDoctor{
+import labs.lab3.patient.Patient;
+
+public class Surgeon implements IDoctor {
 
     @Override
     public boolean examinePatient(Patient patient) {

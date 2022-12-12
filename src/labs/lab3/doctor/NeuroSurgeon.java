@@ -1,6 +1,8 @@
-package labs.lab3;
+package labs.lab3.doctor;
 
-public class NeuroSurgeon extends Surgeon{
+import labs.lab3.patient.Patient;
+
+public class NeuroSurgeon extends Surgeon {
 
     @Override
     String doOperation(Patient patient){

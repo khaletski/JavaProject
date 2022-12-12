@@ -1,4 +1,6 @@
-package labs.lab3;
+package labs.lab3.doctor;
+
+import labs.lab3.patient.Patient;
 
 public interface IDoctor {
 

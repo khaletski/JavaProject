@@ -1,5 +1,9 @@
 package labs.lab3;
 
+import labs.lab3.doctor.NeuroSurgeon;
+import labs.lab3.doctor.Surgeon;
+import labs.lab3.patient.Patient;
+
 import java.io.IOException;
 import java.util.logging.*;
 
