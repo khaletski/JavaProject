@@ -9,5 +9,4 @@ public class NeuroSurgeon extends Surgeon{
         }
         return patient.getComplaint() + " -> don't operation:";
     }
-
 }

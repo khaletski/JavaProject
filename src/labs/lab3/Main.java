@@ -1,19 +1,27 @@
 package labs.lab3;
 
-import java.util.logging.Logger;
+import java.io.IOException;
+import java.util.logging.*;
 
 public class Main {
-    public static void main(String[] args) {
+
+    private static final Logger logger = Logger.getLogger(Main.class.getName());
+
+    public static void main(String[] args) throws IOException {
+        Handler consoleHandler = new FileHandler();
         Surgeon surgeon = new Surgeon();
         NeuroSurgeon neurosurgeon = new NeuroSurgeon();
         Patient firstPatient = new Patient(37.5, "headache");
+        logger.addHandler(consoleHandler);
+        logger.info("Surgeon: " + surgeon.doOperation(firstPatient));
+        logger.info("Neurosurgeon: " + neurosurgeon.doOperation(firstPatient));
+
         Patient secondPatient = new Patient(37.0, "stomachache");
+        logger.info("Surgeon: " + surgeon.doOperation(secondPatient));
+        logger.info("Neurosurgeon: " + neurosurgeon.doOperation(secondPatient));
+
         Patient thirdPatient = new Patient(36.6, null);
-        System.out.println("Surgeon: " + surgeon.doOperation(firstPatient));
-        System.out.println("Surgeon: " + surgeon.doOperation(secondPatient));
-        System.out.println("Surgeon: " + surgeon.doOperation(thirdPatient));
-        System.out.println("Neurosurgeon: " + neurosurgeon.doOperation(firstPatient));
-        System.out.println("Neurosurgeon: " + neurosurgeon.doOperation(secondPatient));
-        System.out.println("Neurosurgeon: " + neurosurgeon.doOperation(thirdPatient));
+        logger.info("Surgeon: " + surgeon.doOperation(thirdPatient));
+        logger.info("Neurosurgeon: " + neurosurgeon.doOperation(thirdPatient));
     }
 }

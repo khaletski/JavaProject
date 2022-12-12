@@ -15,7 +15,6 @@ public class Surgeon implements IDoctor{
         throw new UnsupportedOperationException();
     }
 
-
      String doOperation(Patient patient)
      {
         if(patient.getComplaint() != null){
@@ -23,5 +22,4 @@ public class Surgeon implements IDoctor{
         }
          return patient.getComplaint() + " -> don't operation:";
      }
-
 }
